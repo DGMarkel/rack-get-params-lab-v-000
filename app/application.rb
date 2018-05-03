@@ -21,7 +21,7 @@ class Application
         req.write "Your cart is empty"
       else
         @@cart.each do |item|
-          resp.write "#{item}/n"
+          resp.write "#{item}\n"
         end
       end
 
@@ -33,7 +33,7 @@ class Application
         resp.write "You have added #{add_item} to your cart."
       else
         resp.write "We don't have that item."
-      end 
+      end
 
     else
       resp.write "Path Not Found"
